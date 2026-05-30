@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>智慧家园 · 小区业委会</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+</head>
+<body>
+
+<!-- ===== App Shell ===== -->
+<div class="app-shell">
+  <!-- Header -->
+  <div class="app-header">
+    🏠 智慧家园
+    <div class="header-actions">
+      <button id="adminToggle" onclick="App.toggleAdminMode()">管理</button>
+      <span class="admin-badge" style="display:none;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:3px;font-size:10px">管理</span>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="app-content">
+    <!-- 首页 -->
+    <div class="page active" id="page-home"></div>
+
+    <!-- 投票 -->
+    <div class="page" id="page-vote"></div>
+
+    <!-- 集资 -->
+    <div class="page" id="page-fund"></div>
+
+    <!-- 信息 -->
+    <div class="page" id="page-info"></div>
+
+    <!-- 留言板 -->
+    <div class="page" id="page-board"></div>
+  </div>
+
+  <!-- Tab Bar -->
+  <div class="tab-bar">
+    <div class="tab-item active" data-tab="home">
+      <span class="tab-icon">🏠</span>
+      <span class="tab-label">首页</span>
+    </div>
+    <div class="tab-item" data-tab="vote">
+      <span class="tab-icon">🗳️</span>
+      <span class="tab-label">投票</span>
+    </div>
+    <div class="tab-item" data-tab="fund">
+      <span class="tab-icon">💰</span>
+      <span class="tab-label">集资</span>
+    </div>
+    <div class="tab-item" data-tab="info">
+      <span class="tab-icon">📰</span>
+      <span class="tab-label">信息</span>
+    </div>
+    <div class="tab-item" data-tab="board">
+      <span class="tab-icon">💬</span>
+      <span class="tab-label">留言</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Scripts ===== -->
+<script src="js/store.js"></script>
+<script src="js/feishu.js"></script>
+<script src="js/cloud.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
