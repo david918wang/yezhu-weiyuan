@@ -1,0 +1,13 @@
+{
+  "name": "yezhuweiyuan-app",
+  "version": "2.0.0",
+  "description": "智慧家园 · 小区业委会小程序（含飞书通知）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.16.1",
+    "express": "^4.22.2"
+  }
+}

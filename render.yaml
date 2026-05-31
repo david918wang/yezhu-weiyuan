@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: yezhu-weiyuan
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    disk:
+      name: data
+      mountPath: /opt/render/project/src/data
